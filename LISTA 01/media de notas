@@ -1,0 +1,28 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Vamos Calcular a sua média");
+        
+        
+        Console.WriteLine("Diite a sua primeira nota");//pedindo a primeira nota
+        string nota1 = Console.ReadLine();//input do usuario e alocamento na variavel
+        double nota1Double = double.Parse(nota1); //Conversão de string para double
+        
+        Console.WriteLine("Digite a sua segunda nota: ");//pedindo a segunda nota
+        string nota2 = Console.ReadLine(); //input do usuario e alocamento na variavel
+        double nota2Double = double.Parse(nota2);// COnversão de string para Double
+        
+        Console.WriteLine("Digite a sua Terceira Nota:"); //pedindo a terceira nota
+        string nota3 = Console.ReadLine();//input do usuario e alocamento na variavel
+        double nota3Double = double.Parse(nota3);// COnversão de string para Double
+        
+        double media = (nota1Double + nota2Double + nota3Double) / 3; // calculando a media
+        
+        Console.WriteLine($"A sua média eh: {media}"); // exibindo a media na tela
+        
+        
+    }
+}
