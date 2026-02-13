@@ -1,1 +1,12 @@
+using System;
 
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Por favor Digite seu nome: ");
+        string nome = Console.ReadLine();
+        
+        Console.WriteLine($"Bem-vindo, {nome}!");
+    }
+}
