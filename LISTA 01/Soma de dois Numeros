@@ -1,0 +1,21 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Vamos fazer a soma de 2 numeros:");
+        Console.WriteLine("Digite a sua primeira nota: ");
+        string nota1 = Console.ReadLine();
+        int nota1Int = Int32.Parse(nota1);
+        
+        Console.WriteLine("Digite a sua Segunda nota:");
+        string nota2 = Console.ReadLine();
+        int nota2Int = Int32.Parse(nota2);
+        
+        int soma = nota2Int + nota1Int;
+        
+        Console.WriteLine($"A soma dos numeros digitados eh: {soma}");
+        
+    }
+}
