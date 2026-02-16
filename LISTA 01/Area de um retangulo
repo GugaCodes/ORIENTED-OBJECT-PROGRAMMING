@@ -1,0 +1,16 @@
+Console.WriteLine("Vamos Calcular a area de um retangulo");
+Console.WriteLine("Digite a altura: ");
+string altura = Console.ReadLine();
+double  alturaConvert = double.Parse(altura);
+
+Console.WriteLine("Digite a bse: ");
+string basee = Console.ReadLine(); 
+double baseConvert = double.Parse(basee);
+
+double area = baseConvert * alturaConvert;
+
+Console.WriteLine("A area do seu triangulo eh: {0}",area);
+
+
+
+
