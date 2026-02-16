@@ -1,0 +1,14 @@
+Console.WriteLine("Digite seu nome: ");
+string nome = Console.ReadLine();
+
+Console.WriteLine("Digite seu salário bruto");
+string salarioBruto =  Console.ReadLine();
+double salario = double.Parse(salarioBruto);
+
+Console.WriteLine("Digite o percentual de desconto");
+string percentual = Console.ReadLine();
+double desconto = double.Parse(percentual);
+
+double salarioLiquido = salario - (salario * desconto / 100);
+
+Console.WriteLine($"Olá {nome}, tudo bem?\n O seu salário liquido eh de {salarioLiquido}");
