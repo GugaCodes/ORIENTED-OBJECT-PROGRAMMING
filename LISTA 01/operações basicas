@@ -1,0 +1,18 @@
+Console.WriteLine("Vamos fazer operações bascias");
+Console.WriteLine("Digite um número");
+string n1 = Console.ReadLine();
+double n1Convert = double.Parse(n1);
+
+Console.WriteLine("Digite um segundo número");
+string n2 = Console.ReadLine();
+double n2Convert = double.Parse(n2); 
+
+double soma = n1Convert + n2Convert;
+double subtracao = n1Convert - n2Convert;
+double multiplicacao = n1Convert * n2Convert;
+double divisao = n1Convert / n2Convert;
+
+Console.WriteLine($"{n1Convert} + {n2Convert} = {soma}");
+Console.WriteLine($"{n1Convert} - {n2Convert} = {subtracao}");
+Console.WriteLine($"{n1Convert} * {n2Convert} = {multiplicacao}");
+Console.WriteLine($"{n1Convert} / {n2Convert} = {divisao}");
