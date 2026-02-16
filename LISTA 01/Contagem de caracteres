@@ -1,0 +1,4 @@
+Console.WriteLine("Digite uma frase");
+string frase =  Console.ReadLine();
+
+Console.WriteLine($"A sua frase tem {frase.Length} caracteres");
