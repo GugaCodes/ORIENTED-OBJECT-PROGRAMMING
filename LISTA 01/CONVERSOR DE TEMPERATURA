@@ -1,0 +1,9 @@
+Console.WriteLine("Vamos Converter Temperatura!");
+Console.WriteLine("Digite um temperatura em Graus Celsius");
+string temperatura = Console.ReadLine();
+
+
+double temperaturaCelsius = double.Parse(temperatura);
+double conversao = (temperaturaCelsius * 9 / 5) + 32;
+
+Console.WriteLine($"A sua temperatura em farenheint eh: {conversao}");
