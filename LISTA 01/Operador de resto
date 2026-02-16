@@ -1,0 +1,13 @@
+Console.WriteLine("Vamos verificar se um numeoréh impar ou par");
+Console.WriteLine("Digite uym Numero: ");
+string n1 = Console.ReadLine();
+int numero1 = Int32.Parse(n1);
+
+if(numero1 % 2 == 0)
+{
+    Console.WriteLine("O seu numero eh par");
+}
+else
+{
+    Console.WriteLine("O seu numero eh impar");
+}
