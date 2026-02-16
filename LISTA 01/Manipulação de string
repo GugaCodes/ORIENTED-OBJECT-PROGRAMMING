@@ -1,0 +1,9 @@
+Console.WriteLine("Diigte uma frase");
+string frase = Console.ReadLine();
+string maiuscula = frase.ToUpper().Trim();
+string minuscula = frase.ToLower().Trim();
+string noSpaceBE = frase.Trim();
+
+Console.WriteLine($"MAIUSCULA: {maiuscula}");
+Console.WriteLine($"MINUSCULA: {minuscula}");
+Console.WriteLine($"EM ESPACO NO COMECO E FIM: {noSpaceBE}");
