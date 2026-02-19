@@ -1,0 +1,13 @@
+Console.WriteLine("Digite seu peso:");
+string pesoString = Console.ReadLine();
+double peso = double.Parse(pesoString);
+
+Console.WriteLine("Digite a sua altura: ");
+string alturaString = Console.ReadLine();
+double altura = double.Parse(alturaString);
+
+double imc = peso / (altura * altura);
+
+
+Console.WriteLine($"A sua altura e {alturaString} e seu peso eh{pesoString} , logo seu imc e {imc.ToString("F2")}");
+
