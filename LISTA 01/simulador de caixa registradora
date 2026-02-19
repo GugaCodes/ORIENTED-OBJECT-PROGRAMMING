@@ -1,0 +1,22 @@
+//SIMULADOR DE CAIXA REGISTRADORA
+
+Console.WriteLine("PRODUTO: ");
+string produtoString = Console.ReadLine();
+
+
+Console.WriteLine("PREÇO UNITARIO: ");
+string precoString = Console.ReadLine();
+double preco = double.Parse(precoString);
+
+Console.WriteLine("QUANTIDADE: ");
+string qtdString = Console.ReadLine();
+int qtd = Int32.Parse(qtdString);
+
+double subtotal = preco * qtd;
+
+double desconto = subtotal > 200 ? (subtotal * 10) / 100 : subtotal;
+
+
+
+
+//terminar
