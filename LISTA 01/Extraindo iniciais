@@ -1,0 +1,8 @@
+Console.WriteLine("Digite seu nome: ");
+string name = Console.ReadLine();
+string[] strname = name.Split(' ');
+
+Console.WriteLine($"A sua iniciais são: {strname[0][0]}.{strname[1][0]}.{strname[2][0]}");
+
+
+
