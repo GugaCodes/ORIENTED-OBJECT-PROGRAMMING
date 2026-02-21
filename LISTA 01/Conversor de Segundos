@@ -1,0 +1,11 @@
+//Conversor de tempo 
+
+Console.WriteLine("Digite os segundos: ");
+string valorSegundos = Console.ReadLine();
+int ConversaoSegundos = Int32.Parse(valorSegundos);
+
+int horas = ConversaoSegundos / 3600;
+int minutos = (ConversaoSegundos % 3600) / 60;
+int segundos = ConversaoSegundos % 60;
+
+Console.WriteLine($"{horas.ToString("D2")}:{minutos.ToString("D2")}:{segundos.ToString("D2")}");
