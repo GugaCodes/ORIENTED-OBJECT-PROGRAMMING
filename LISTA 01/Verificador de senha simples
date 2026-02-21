@@ -1,0 +1,11 @@
+Console.WriteLine("Digite sua senha");
+string senha = Console.ReadLine(); 
+
+
+bool contemNumero  = senha.Any(char.IsDigit) ;
+bool ContemMaiuscula = senha.Any(char.IsUpper);
+int qtdSenha = senha.Length;
+
+Console.WriteLine("Possi Numero: {0}",contemNumero);
+Console.WriteLine("Possui Maiuscula: {0}",ContemMaiuscula);
+Console.WriteLine("Qtd de Caracteres: {0}",qtdSenha);
