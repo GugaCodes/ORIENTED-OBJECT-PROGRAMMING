@@ -1,0 +1,14 @@
+//Gerador de e-mai corporativo
+
+Console.WriteLine("Digite seu nome: ");
+string nome = Console.ReadLine();
+
+Console.WriteLine("Digite seu sobrenome: ");
+string  sobrenome =  Console.ReadLine();
+
+Console.WriteLine("digite a sua empresa: ");
+string empresa =  Console.ReadLine();
+
+string email = nome + "." + sobrenome + "@" + empresa + ".com";
+
+Console.WriteLine("O seu email corporativo e: {0}",email);
