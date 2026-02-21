@@ -1,0 +1,19 @@
+//Calculo de juros compostos
+
+//recolhendo dados
+Console.WriteLine("Digite o Capital Inicial");
+string valorCapital = Console.ReadLine();
+Console.WriteLine("Digite a taxa de juros mensal: ");
+string ValorJuros = Console.ReadLine();
+Console.WriteLine("Digite o numero de meses");
+string ValorMeses = Console.ReadLine();
+
+// conversão de string para float e int
+
+double capitalInicial = double.Parse(valorCapital);
+double juros = double.Parse(ValorJuros);
+int meses = Int32.Parse(ValorMeses);
+
+double montante = capitalInicial * Math.Pow(1 + juros / 100, meses);
+
+Console.WriteLine($"Apos analises dos dados o seu montante sera de : {montante.ToString("C2")}");
