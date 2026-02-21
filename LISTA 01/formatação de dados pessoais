@@ -1,0 +1,15 @@
+//FORMATAÇÃO DE DADOS PESSOAIS
+
+Console.WriteLine("Digite seu nome: ");
+string nome = Console.ReadLine();
+
+Console.WriteLine("Digite a sua idade: ");
+string idade =  Console.ReadLine();
+
+Console.WriteLine("Digite a sua cidade: ");
+string cidade = Console.ReadLine();
+
+Console.WriteLine("DIgite a sua profissao: ");
+string profissao = Console.ReadLine();
+
+Console.WriteLine($"Nome: {nome} | Idade: {idade} | Cidadade: {cidade} | Profissão: {profissao}");
