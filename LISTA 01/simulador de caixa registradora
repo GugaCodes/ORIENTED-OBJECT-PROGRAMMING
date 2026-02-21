@@ -16,7 +16,11 @@ double subtotal = preco * qtd;
 
 double desconto = subtotal > 200 ? (subtotal * 10) / 100 : subtotal;
 
+double precoFinal = subtotal - desconto;
+
+Console.WriteLine($"O preco final da sua compra e {precoFinal}");
 
 
 
-//terminar
+
+
