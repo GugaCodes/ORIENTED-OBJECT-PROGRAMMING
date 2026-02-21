@@ -1,0 +1,12 @@
+//Separando parte inteira da decimal
+
+Console.WriteLine("Digite um numero: ");
+string Valor = Console.ReadLine();
+double numero = double.Parse(Valor);
+
+double inteiro = Math.Floor(numero);
+double decimaal = numero - inteiro;
+
+
+
+Console.WriteLine($"Inteiro: {inteiro}, decimal: {decimaal.ToString("F2")}");
