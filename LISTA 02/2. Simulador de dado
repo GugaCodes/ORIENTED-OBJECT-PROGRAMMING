@@ -1,0 +1,8 @@
+Random random = new Random();
+
+for (int i = 1; i < 11; i++)
+{
+    int dado = random.Next(1, 7);
+    Console.WriteLine("Lançamento " + i +" : "+  dado);
+
+}
