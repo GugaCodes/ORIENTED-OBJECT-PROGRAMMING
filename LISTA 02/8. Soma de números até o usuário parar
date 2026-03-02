@@ -1,0 +1,17 @@
+// Soma de numeros até o usuario parar
+
+Console.WriteLine("Digite 0 para PARAR!!!");
+Console.WriteLine("Digite um numero:");
+string numString = Console.ReadLine();
+double num = double.Parse(numString);
+double soma = num;
+
+while (num != 0)
+{
+    
+    Console.WriteLine("Digite um numero:");
+    numString = Console.ReadLine();
+    num = double.Parse(numString);
+    soma += num;
+}
+Console.WriteLine("A soma dos valores e: {0}", soma);
