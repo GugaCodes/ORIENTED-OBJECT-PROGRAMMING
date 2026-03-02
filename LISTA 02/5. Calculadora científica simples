@@ -4,19 +4,17 @@
 //lendo numero e fazendo a conversão
 Console.WriteLine("Digite um número");
 string numString = Console.ReadLine();
-double num =  double.Parse(numString);
+double num = double.Parse(numString);
 
 // fazendo calculos
 double sqrt = Math.Sqrt(num);
-double pow = Math.Pow(2, num);
+double pow = Math.Pow(num, 2);
 double absolute = Math.Abs(num);
 double ceiling = Math.Ceiling(num);
-double floor  = Math.Floor(num);
+double floor = Math.Floor(num);
 
 Console.WriteLine($"RAIZ QUADRADA: {sqrt:F2} ");
 Console.WriteLine($"POTENCIA AO QUADRADO: {pow:F2} ");
 Console.WriteLine($"VALOR ABSOLUTO: {absolute}");
 Console.WriteLine($"ARREDONDAMENTO PARA CIMA: {ceiling}");
 Console.WriteLine($"ARREDONDAMENTO PARA BAIXO: {floor}");
-
-
