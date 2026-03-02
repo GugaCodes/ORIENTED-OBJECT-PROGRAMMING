@@ -1,0 +1,10 @@
+//TABUADA COMPLETA 1 AO 10
+
+Console.WriteLine("Digite um numero:");
+string numString = Console.ReadLine();
+int num = Int32.Parse(numString);
+
+for(int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"{num} * {i} = {i * num}");
+}
