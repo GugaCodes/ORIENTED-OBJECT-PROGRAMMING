@@ -1,0 +1,22 @@
+//DISTANCIA ENTRE DOIS PONTOS
+
+// leitura de dados
+Console.WriteLine("Digite o x1");
+string x1String = Console.ReadLine();
+Console.WriteLine("Digite o y1");
+string y1String =  Console.ReadLine();
+Console.WriteLine("Digite o x2");
+string x2String =  Console.ReadLine();
+Console.WriteLine("Digite o y2");
+string y2String = Console.ReadLine();
+
+// conversão do tipo(variaveis)
+
+double x1 = double.Parse(x1String);
+double x2 = double.Parse(x2String);
+double y1 = double.Parse(y1String);
+double y2 = double.Parse(y2String);
+
+double distance = Math.Sqrt(Math.Pow(x2-x1,2) +  Math.Pow(y2-y1,2));
+
+Console.WriteLine("A distancia dos dois pontos eh de: {0}", distance);
