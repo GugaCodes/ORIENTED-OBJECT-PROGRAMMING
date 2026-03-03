@@ -1,0 +1,30 @@
+//CADASTRO DE NOMES
+
+List<string> nomes = new List<string>();
+
+Console.WriteLine("Digite 'sair' para parar");
+Console.WriteLine();
+string nome = "";
+
+while (nome != "sair"){
+
+    Console.WriteLine("Digite um nome: ");
+    nome = Console.ReadLine();
+    nomes.Add(nome);
+}
+
+Console.WriteLine();
+nomes.Remove("sair");
+
+foreach (string nomess in nomes)
+{
+    Console.WriteLine(nomess);
+}
+
+Console.WriteLine("---- ORDENADO -----");
+nomes.Sort();
+
+foreach (string nomess in nomes)
+{
+    Console.WriteLine(nomess);
+}
