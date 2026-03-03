@@ -1,0 +1,24 @@
+Random random = new Random();
+
+int cara = 0;
+int coroa = 0;
+
+
+
+for (int i = 0; i <= 10; i++)
+{
+    int moeda = random.Next(0,2);
+    if(moeda == 1)
+    {
+        cara++;
+        Console.WriteLine("Cara");
+        
+    }
+    else
+    {
+        Console.WriteLine("Coroa");
+        coroa++;
+    }
+}
+
+Console.WriteLine($"Após o lançamento de dado, caiu coroa {coroa} vezes e cara {cara} vezes");
