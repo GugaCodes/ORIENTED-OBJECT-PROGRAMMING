@@ -1,0 +1,12 @@
+using System.Threading;
+
+Console.WriteLine("Digite um numero: ");
+string numString = Console.ReadLine();
+int num = Int32.Parse(numString);
+Console.WriteLine("----------------------------------");
+
+for(int i = num; i > 0; i--)
+{
+    Console.WriteLine(num--);
+    Thread.Sleep(1000);
+}
