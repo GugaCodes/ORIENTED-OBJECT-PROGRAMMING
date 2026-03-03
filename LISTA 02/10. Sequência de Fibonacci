@@ -1,0 +1,41 @@
+Console.WriteLine("Digite um numero:");
+string numString = Console.ReadLine();
+int num = Int32.Parse(numString);
+int t1 = 0;
+int t2 = 1;
+
+for (int i = 1; i<= num; i++)
+{
+    Console.WriteLine(t1);
+    int proxTermo = t1 + t2;
+    t1 = t2;
+    t2 = proxTermo;
+
+    /*
+     t1 = 0
+    t2 = 1
+    proxTermo = 0
+
+    proxTermo = 1
+    t1 = 1;
+    t2 = 1
+
+    proxTermo = 2
+    t1 = 1
+    t2 = 2
+
+    proxTermo = 3
+    t1 = 2
+    t2 = 3
+
+    proxTermo = 5
+    t1 = 3
+    t2 = 5
+
+    proxTermo = 8
+    t1 = 5
+    t2 = 8
+
+    proxTermo = 15;
+     */
+}
