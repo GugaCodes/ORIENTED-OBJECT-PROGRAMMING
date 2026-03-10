@@ -1,0 +1,11 @@
+using Exercicio2;
+
+Produto MeuProduto = new Produto();
+
+MeuProduto.Nome = "Playstation 5";
+MeuProduto.Preco = 4500.00;
+MeuProduto.Quantidade = 3;
+double valor = MeuProduto.CalcularValorTotal();
+
+Console.WriteLine($"O valor total eh: {valor:F2}");
+
