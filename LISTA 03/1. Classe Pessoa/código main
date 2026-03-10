@@ -1,0 +1,9 @@
+using Exercicio1;
+
+ Pessoa MinhaPessoa = new Pessoa();
+
+
+MinhaPessoa.Nome = "Gustavo";
+MinhaPessoa.Idade = 18;
+MinhaPessoa.Altura = 1.85;
+MinhaPessoa.Apresentar();
