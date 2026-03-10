@@ -1,6 +1,4 @@
 using System.Runtime.InteropServices;
-using Exercicio1;
-using Exercicio2;
 using Exercicio3;
 
 Retangulo MeuRetangulo = new Retangulo();
