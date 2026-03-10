@@ -1,0 +1,16 @@
+using System.Runtime.InteropServices;
+using Exercicio1;
+using Exercicio2;
+using Exercicio3;
+
+Retangulo MeuRetangulo = new Retangulo();
+
+MeuRetangulo.Altura = 2;
+MeuRetangulo.Largura = 2;
+double perimetro = MeuRetangulo.CalcularPerimetro();
+double area = MeuRetangulo.CalcularArea();
+
+Console.WriteLine($"A area do retangulo eh: {area} e o perimetro eh: {perimetro}");
+
+
+
