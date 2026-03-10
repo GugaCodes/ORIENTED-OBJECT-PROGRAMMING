@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.AccessControl;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio2
+{ 
+    public class Produto
+    {
+        public string Nome;
+        public double Preco;
+        public int Quantidade;
+
+        public double CalcularValorTotal()
+        {
+            double valorTotal = Preco * Quantidade;
+            return valorTotal;
+        }
+    }
+}
