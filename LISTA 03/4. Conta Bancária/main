@@ -1,0 +1,17 @@
+using System.Runtime.InteropServices;
+
+using Exercicio4;
+
+ContaBancária MinhaConta = new ContaBancária();
+
+MinhaConta.Titular = "Gustavo Silva Oliveira";
+MinhaConta.Saldo = 100036.58;
+
+MinhaConta.ExibirSaldo();
+MinhaConta.Sacar(985.63);
+MinhaConta.ExibirSaldo();
+MinhaConta.Depositar(10.36);
+MinhaConta.ExibirSaldo();
+
+
+
