@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio4
+{
+    public class ContaBancária
+    {
+        public string Titular;
+        public double Saldo;
+
+        public double Depositar(double valor)
+        {
+            
+            return Saldo + valor;
+        }
+
+        public double Sacar(double valor)
+        {
+            
+            return Saldo - valor;
+        }
+
+        public void ExibirSaldo()
+        {
+            Console.WriteLine($"Olá {Titular}\nO seu saldo eh de {Saldo}");
+        }
+    }
+}
