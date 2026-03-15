@@ -1,0 +1,15 @@
+using System.Runtime.InteropServices;
+
+using Exercicio5;
+
+Carro meuCarro = new Carro();
+
+meuCarro.Marca = "Ford";
+meuCarro.Modelo = "Mustang";
+meuCarro.VelocidadeAtual = 120;
+
+meuCarro.ExibirVelocidade();
+meuCarro.Acelerar(225);
+meuCarro.ExibirVelocidade();
+meuCarro.Frear(100);
+meuCarro.ExibirVelocidade();
