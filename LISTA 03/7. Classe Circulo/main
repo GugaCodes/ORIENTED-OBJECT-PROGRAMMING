@@ -1,0 +1,12 @@
+using System.Runtime.InteropServices;
+
+using Exercicio7;
+
+Circulo circulo1 = new Circulo();
+
+circulo1.Raio = 5;
+
+double circunferencia = circulo1.CalcularCircunferencia();
+double area = circulo1.CalcularArea();
+
+Console.WriteLine($"A area do circulo eh: {area} e a circunferencia eh: {circunferencia}");
