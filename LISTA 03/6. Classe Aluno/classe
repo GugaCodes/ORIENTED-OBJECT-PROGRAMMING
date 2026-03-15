@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Text;
+
+namespace Exercicio6
+{
+    internal class Aluno
+    {
+        public string Nome;
+        public double Nota1;
+        public double Nota2;
+
+        public double CalcularMedia()
+        {
+            double media = (Nota1 + Nota2) / 2;
+            return media;
+
+        }
+        public void ExibirSituacao()
+        {
+            double media = CalcularMedia();
+            if (media >= 7)
+            {
+                Console.WriteLine($"OLÁ {Nome}. VOCÊ FOI APROVADO!");
+            }
+            else
+            {
+                Console.WriteLine($"OLÁ {Nome}. VOCÊ FOI REPROVADO!");
+            }
+
+        }
+    }
+}
