@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+
+namespace Exercicio5
+{
+    public class Carro
+    {
+        public string Marca;
+        public string Modelo;
+        public int VelocidadeAtual;
+
+        public int Acelerar(int valor)
+        {
+                return VelocidadeAtual += valor;
+        }
+
+        public int Frear(int valor)
+        {
+            return VelocidadeAtual -= valor;
+        }
+
+        public void ExibirVelocidade()
+        {
+            Console.WriteLine($"A velocidade do carro eh {VelocidadeAtual} KM/h");
+        }
+    }
+
+}
