@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ClienteEx1;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace Exercicio1
+{
+    public class ContaBancária
+    {
+         public Dictionary<string, double > Saldo = new Dictionary<string, double>();
+        
+        public void Depositar(double valor, string cpf)
+        {
+            
+            Saldo[cpf] += valor;
+            
+        }
+
+        public void Sacar(double valor, string cpf)
+        {
+            if (!Saldo.ContainsKey(cpf))
+            {
+                Console.WriteLine("Erro ao Sacar: Conta Não Existente");
+                return;
+            }
+
+            if (Saldo[cpf] < valor )
+            {
+                Console.WriteLine("Saldo Insuficiente");
+                return;
+            }
+            else if(valor < 0)
+            {
+                Console.WriteLine("Valor Não reconhecido");
+                return;
+            }
+            else
+            {
+                Saldo[cpf] -= valor;
+                Console.WriteLine("Saque Efetuado com Sucesso");
+            }
+            
+            
+        }
+
+        public void MostrarDados(Cliente cliente)
+        {
+            if (!Saldo.ContainsKey(cliente.Cpf))
+            {
+                Console.WriteLine("Erro ao mostrar dados: Conta Não Existente");
+                return;
+            }
+            Console.WriteLine($"Nome: {cliente.Nome}\nSaldo: {Saldo[cliente.Cpf]}");
+        }
+
+
+
+
+    }
+
+}
