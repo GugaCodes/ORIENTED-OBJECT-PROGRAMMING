@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Exercicio1;
+
+
+
+
+namespace ClienteEx1
+{
+    public class Cliente
+    {
+        public string Cpf = "";
+        public string Nome = "";
+        
+
+        public void Depositar(double valor, ContaBancária conta)
+        {
+            if (!conta.Saldo.ContainsKey(Cpf))
+            {
+                Console.WriteLine("Erro ao mostrar dados: Conta Não Existente");
+                return;
+            }
+            conta.Depositar(valor, Cpf);
+        }
+        public void Sacar(double valor, ContaBancária conta)
+        {
+            conta.Sacar(valor, Cpf);
+        }
+
+        public void MostrarDados(ContaBancária conta)
+        {
+            conta.MostrarDados(this);
+        }
+        
+    }
+
+}
