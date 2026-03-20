@@ -1,19 +1,21 @@
-using Exercicio1;
 using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
 
 ContaBancária Bradesco = new ContaBancária();
 Cliente Cliente1 = new Cliente();
 
 //Cliente1.Nome = "Gustavo";
-Cliente1.Cpf = "22587812142";
 //Bradesco.Saldo[Cliente1.Cpf] = 0.00;
+Cliente1.Cpf = "22587812142";
 
 /*Cliente1.Sacar(-52.32, Bradesco);
 Cliente1.MostrarDados(Bradesco);*/
 
 Console.WriteLine("BEM VINDO AO BANCO BRADESCO");
 Console.WriteLine("Digite seu nome:");
- Cliente1.Nome = Console.ReadLine();
+Cliente1.Nome = Console.ReadLine();
 
 Console.WriteLine("Digite seu CPF:");
 Cliente1.Cpf = Console.ReadLine();
@@ -21,11 +23,11 @@ Cliente1.Cpf = Console.ReadLine();
 Console.WriteLine("O que deseja fazer:\n 1- Sacar\n 2-Depositar\n 3-Exibir Saldo");
 string escolha = Console.ReadLine();
 
-if(escolha == "1")
+if (escolha == "1")
 {
     Console.WriteLine("Digite o Valor: ");
     string valorString = Console.ReadLine();
     double valor = double.Parse(valorString);
     Cliente1.Sacar(valor, Bradesco);
 }
-
+Cliente1.MostrarDados(Bradesco);
