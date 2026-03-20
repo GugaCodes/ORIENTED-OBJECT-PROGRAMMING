@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace ClienteEx1
     {
         public string Cpf = "";
         public string Nome = "";
-        
+
 
         public void Depositar(double valor, ContaBancária conta)
         {
@@ -34,7 +35,7 @@ namespace ClienteEx1
         {
             conta.MostrarDados(this);
         }
-        
+
     }
 
 }
