@@ -10,13 +10,13 @@ namespace Exercicio1
 {
     public class ContaBancária
     {
-         public Dictionary<string, double > Saldo = new Dictionary<string, double>();
-        
+        public Dictionary<string, double> Saldo = new Dictionary<string, double>();
+
         public void Depositar(double valor, string cpf)
         {
-            
+
             Saldo[cpf] += valor;
-            
+
         }
 
         public void Sacar(double valor, string cpf)
@@ -24,15 +24,17 @@ namespace Exercicio1
             if (!Saldo.ContainsKey(cpf))
             {
                 Console.WriteLine("Erro ao Sacar: Conta Não Existente");
-                return;
+                Console.WriteLine("Criando Conta....");
+                CriarConta(cpf);
+                
             }
 
-            if (Saldo[cpf] < valor )
+            if (Saldo[cpf] < valor)
             {
                 Console.WriteLine("Saldo Insuficiente");
                 return;
             }
-            else if(valor < 0)
+            else if (valor < 0)
             {
                 Console.WriteLine("Valor Não reconhecido");
                 return;
@@ -42,8 +44,8 @@ namespace Exercicio1
                 Saldo[cpf] -= valor;
                 Console.WriteLine("Saque Efetuado com Sucesso");
             }
-            
-            
+
+
         }
 
         public void MostrarDados(Cliente cliente)
@@ -54,6 +56,13 @@ namespace Exercicio1
                 return;
             }
             Console.WriteLine($"Nome: {cliente.Nome}\nSaldo: {Saldo[cliente.Cpf]}");
+        }
+
+        public void CriarConta(string cpf){
+            Saldo.Add(cpf, 250);
+            Console.WriteLine("Conta Criada com Sucesso");
+            
+            
         }
 
 
