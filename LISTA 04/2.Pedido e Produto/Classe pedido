@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
+using System.Text;
+using POO_EXERCICIOS;
+
+namespace POO_EXERCICIOS
+{
+   public class Pedido
+        
+    {
+        
+        List<string> listaprodutos = new List<string>();// LISTA DO CARRINHO DE PRODUTOS
+        // TABELA DE PREÇOS
+        Dictionary<string, double> tabelaPrecos = new Dictionary<string, double>()
+        {
+            {"Arroz", 20.32},
+            {"Leite", 10.99},
+            {"Pão", 12.00},
+            {"Suco Tang", 1.32},
+
+        };
+
+        public void MostrarEstoque()
+        {
+            foreach(KeyValuePair<string, double> produto in tabelaPrecos)
+            {
+                Console.WriteLine($"Produto:{produto.Key} --> {produto.Value:C2}");
+                
+            }
+            Console.WriteLine();
+        }
+
+        
+        //metodo para adicionar 
+        public void AdicionarProduto(string item)
+        {
+            listaprodutos.Add(item);
+        }
+
+
+        
+
+        public void CalcularTotal()
+        {
+
+            double total = 0;
+
+            foreach (string produto in listaprodutos)
+            {
+                total += tabelaPrecos[produto];
+            }
+            Console.WriteLine($"Valor total: {total:C2}");
+        }
+
+
+        //METODO PARA EXIBIR O PRODUTOS DO PEDIDO
+        public void ExibirPedido()
+        {
+            if(listaprodutos.Count == 0)
+            {
+                Console.WriteLine("Seu pedido não possui nenhum produto");
+            }
+            else
+            {
+                Console.WriteLine("Seu carrinho possui os seguintes itens:");
+                foreach(string produto in listaprodutos)
+                {
+                    Console.WriteLine(produto);
+                }
+            }
+
+            
+        }
+        
+    }
+
+}
