@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Produto
+    {
+        public string nome;
+        public double preco;
+        
+
+       
+    }
+
+
+}
