@@ -1,0 +1,34 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+Restaurante nino = new Restaurante();
+Mesa mesa1 = new Mesa();
+Mesa mesa2 = new Mesa();
+Mesa mesa3 = new Mesa();
+Mesa mesa4 = new Mesa();
+Mesa mesa5 = new Mesa();
+Mesa mesa6 = new Mesa();
+Restaurante giulietta = new Restaurante();
+
+mesa1.numeroMesa = "1";
+mesa2.numeroMesa = "2";
+mesa3.numeroMesa = "3";
+mesa4.numeroMesa = "4";
+mesa5.numeroMesa = "5";
+mesa6.numeroMesa = "6";
+nino.AdicionarMesa(mesa1);
+nino.AdicionarMesa(mesa2);
+nino.AdicionarMesa(mesa3);
+nino.AdicionarMesa(mesa4);
+nino.AdicionarMesa(mesa5);
+nino.AdicionarMesa(mesa6);
+nino.OcuparMesa("2");
+nino.MostrarMesa();
+Console.WriteLine();
+nino.LiberarMesa(mesa2);
+nino.MostrarMesa();
+
+
+
+
