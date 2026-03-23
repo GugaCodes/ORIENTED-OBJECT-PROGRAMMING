@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Net.Http.Headers;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Time
+    {
+        public string nomeTime;
+        Dictionary <string,string> listaJogadores = new Dictionary<string, string>();
+
+        public void Contratar(string nome, string posicao, Time time)
+        {
+            listaJogadores.Add (nome, posicao);
+            nomeTime = Convert.ToString(time);
+        }
+        public void Rescindir(string nome){ 
+            listaJogadores.Remove(nome);
+        }
+
+        public void ListarJogadores()
+        {
+            if(listaJogadores.Count == 0)
+            {
+                Console.WriteLine("O time não possui Jogadores!");return;
+            }
+            foreach(KeyValuePair<string, string> atleta in listaJogadores)
+            {
+                Console.WriteLine($"CLUBE: {nomeTime} -> Nome do jogador: {atleta.Key} -> posicao: {atleta.Value}");
+            }
+            Console.WriteLine();
+        }
+     }
+
+
+}
