@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using POO_EXERCICIOS;
+
+namespace POO_EXERCICIOS
+{
+    public class Restaurante
+    {
+        List<Mesa> listaMesas = new List<Mesa>();
+        public void AdicionarMesa(Mesa numMesa)
+        {
+            listaMesas.Add(numMesa);
+            
+
+        }
+
+        public void LiberarMesa(Mesa numMesa)
+        {
+            numMesa.LiberarMesa();
+            
+        }
+
+        public void OcuparMesa(string numeroMesa)
+        {
+            
+            foreach (Mesa mesa in listaMesas) { 
+                if(mesa.numeroMesa == numeroMesa)
+                {
+                    mesa.OcuparMesa();
+                }
+            }
+        }
+
+        public void MostrarMesa()
+        {
+            foreach(Mesa mesa in listaMesas)
+            {
+                if(mesa.ocupada == true)
+                {
+                    Console.WriteLine($"Mesa numero {mesa.numeroMesa} não disponível, está ocupada no momento");
+                }
+                else
+                {
+                    Console.WriteLine($"Mesa numero {mesa.numeroMesa} Está disponivel");
+                }
+                
+            }
+        }
+
+    }
+}
+
+            
+            
+            
