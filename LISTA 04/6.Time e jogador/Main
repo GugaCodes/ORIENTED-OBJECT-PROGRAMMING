@@ -1,0 +1,34 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+Time barcelona = new Time();
+Time realMadrid = new Time();
+Jogador jogador1 = new Jogador();
+Jogador jogador2 = new Jogador();
+Jogador jogador3 = new Jogador();
+Jogador jogador4 = new Jogador();
+
+jogador1.nomeJogador = "Gustavo";
+jogador1.posicaoJogador = "Meia";
+jogador2.nomeJogador = "Daivison";
+jogador2.posicaoJogador = "Goleiro";
+jogador3.nomeJogador = "galo cego";
+jogador3.posicaoJogador = "Volante";
+
+jogador4.nomeJogador = "Zairon";
+jogador4.posicaoJogador = "Lateral";
+
+barcelona.ListarJogadores();
+jogador1.AdicionarAoTime(jogador1.nomeJogador, barcelona);
+jogador2.AdicionarAoTime(jogador1.nomeJogador, barcelona);
+jogador3.AdicionarAoTime(jogador1.nomeJogador, barcelona);
+jogador4.AdicionarAoTime(jogador1.nomeJogador, barcelona);
+barcelona.ListarJogadores();
+Console.WriteLine("Removendo davison do time\n");
+jogador2.RemoverDoTime(jogador2.nomeJogador,barcelona);
+barcelona.ListarJogadores();
+Console.WriteLine("Adicionando Deivison ao Real Madrid\n");
+jogador2.AdicionarAoTime(jogador2.nomeJogador, realMadrid);
+realMadrid.ListarJogadores();
+
