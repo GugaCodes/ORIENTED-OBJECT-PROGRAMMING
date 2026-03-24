@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Motor
+    {
+        public int potencia;
+        public bool estadoMotor;
+
+        public void LigarCarro()
+        {
+            estadoMotor = true;
+            Console.WriteLine("Vrumm, motor ligado");
+        }
+
+        public void DesligarCarro()
+        {
+            estadoMotor = false;
+            Console.WriteLine("trumm, motor desligado");
+            
+        }
+    }
+}
+    
