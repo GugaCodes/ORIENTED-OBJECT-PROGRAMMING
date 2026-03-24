@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using POO_EXERCICIOS;
+
+namespace POO_EXERCICIOS
+{
+    public class Carro
+    {
+        public string marca;
+        public Motor motor;
+
+        public void LigarCarro()
+        {
+            motor.LigarCarro();
+        }
+
+        public void DesligarCarro()
+        {
+            motor.DesligarCarro();
+        }
+
+        public void MostrarInfo()
+        {
+            if(motor.estadoMotor == false)
+            {
+                Console.WriteLine($"O carro possui {motor.potencia} cavalos e no momento está desligado");
+            }
+            else
+            {
+                Console.WriteLine($"O carro possui {motor.potencia} Cavalos e no momento está Ligado, vrummmmmmmm");
+
+            }
+        }
+    }
+}
