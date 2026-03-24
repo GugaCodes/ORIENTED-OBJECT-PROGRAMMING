@@ -1,0 +1,7 @@
+ try {
+    Pessoa pessoa = new Pessoa("Gustavo",-30);
+}
+catch(ArgumentException erro)
+{
+    Console.WriteLine(erro.Message);
+}
