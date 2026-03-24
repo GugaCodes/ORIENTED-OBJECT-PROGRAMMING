@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Pessoa
+    {
+        string nome;
+        int idade;
+
+        public Pessoa(string nome, int idade)
+        {
+            this.nome = nome;
+            if(idade < 0)
+            {
+                throw new ArgumentException("Tem idade negativa?");
+            }
+            this.idade = idade;
+        }
+    }
+}
