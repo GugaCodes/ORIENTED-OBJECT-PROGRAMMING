@@ -1,0 +1,22 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+
+Carro meuCarro = new Carro();
+meuCarro.motor = new Motor();
+
+
+meuCarro.LigarCarro();
+meuCarro.DesligarCarro();
+Console.WriteLine();
+meuCarro.motor.potencia = 250;
+
+meuCarro.MostrarInfo();
+Console.WriteLine();
+meuCarro.LigarCarro();
+meuCarro.MostrarInfo();
+
+
+
+
