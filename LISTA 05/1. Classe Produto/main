@@ -1,0 +1,16 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+
+ try {
+    Produto meuProduto = new Produto("Batata", -15);
+}
+catch(ArgumentException erro)
+{
+    Console.WriteLine(erro.Message);
+}
+
+
+
+
