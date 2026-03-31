@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Pessoa
+    {
+        string nome;
+        int idade;
+
+        public Pessoa(string nome, int idade)
+        {
+            this.nome = nome;
+            this.idade = idade;
+        }
+
+        public string GetNome()
+        {
+            return this.nome;
+        }
+
+        public int GetIdade()
+        {
+            
+            return this.idade;
+        }
+
+        public void SetIdade(int idade)
+        {
+            if(idade < 0)
+            {
+                Console.WriteLine("Idade inválida");
+            }
+            this.idade = idade;
+        }
+
+        public void SetNome(string nome)
+        {
+            this.nome = nome;
+        }
+    }
+}
