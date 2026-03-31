@@ -1,0 +1,11 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    namespace POO_EXERCICIOS
+    {
+        public class Aluno : Pessoa
+        {
+           public string matricula;
+        }
+    }
