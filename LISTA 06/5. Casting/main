@@ -1,0 +1,38 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+
+Aluno aluno1 = new Aluno("Gustavo", 20, "BCC");
+Aluno aluno2 = new Aluno("Mario", 22, "BCC");
+Pessoa pessoa1 = new Pessoa("Guilherme", 13);
+
+List<Pessoa> listaPessoa = new List<Pessoa>();
+
+listaPessoa.Add(pessoa1);
+listaPessoa.Add(aluno1);
+listaPessoa.Add(aluno2);
+
+foreach(Pessoa pessoa in listaPessoa)
+{
+    if(pessoa is Aluno)
+    {
+        Aluno aluno = (Aluno)pessoa; // o objeto pessoa e fazendo casting para aluno
+        Console.Write("Aluno: " + aluno.GetNome());
+        Console.Write(" " + aluno.matricula + "\n");
+    }
+    else
+    {
+        Console.WriteLine("Pessoa: " + pessoa.GetNome());
+    }
+}
+
+
+
+
+
+
+
+
+
+
