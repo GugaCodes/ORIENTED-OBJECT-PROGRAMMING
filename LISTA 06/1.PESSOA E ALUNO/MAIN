@@ -1,0 +1,21 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+
+Aluno aluno1  = new Aluno();
+
+aluno1.nome = "Gustavo";
+aluno1.idade = 15;
+aluno1.matricula = "BCC";
+
+
+
+
+
+
+
+
+
+
+
