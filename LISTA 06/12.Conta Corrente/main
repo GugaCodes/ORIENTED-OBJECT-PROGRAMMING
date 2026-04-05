@@ -1,0 +1,23 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+ContaaBancaria nubank = new ContaaBancaria();
+ContaCorrente conta = new ContaCorrente();
+
+conta.Depositar(300);
+conta.GetInfo();
+conta.Depositar(150);
+conta.GetInfo();
+
+
+
+
+
+
+
+
+
+
+
+
