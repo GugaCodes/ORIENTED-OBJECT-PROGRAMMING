@@ -1,0 +1,16 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public  class Administrador : Usuario
+    {
+        int NivelAcesso;
+
+        public Administrador(string login, string senha, int NivelAcesso): base(login, senha)
+        {
+            this.NivelAcesso = NivelAcesso;
+        }
+    }
+}
