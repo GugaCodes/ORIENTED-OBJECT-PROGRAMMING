@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Usuario
+    {
+        string login;
+        string senha;
+
+        public Usuario(string login, string senha)
+        {
+           this.login = login;
+            if (string.IsNullOrEmpty(senha))
+            {
+                Console.WriteLine("Senha invalida, nao pode ser vazia");
+            }
+            else
+            {
+                this.senha = senha;
+                Console.WriteLine("Usuario criado com sucesso");
+            }
+
+        }
+    }
+}
