@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class ContaCorrente : ContaaBancaria
+    {
+        double limite;
+
+        public ContaCorrente()
+        {
+            this.limite = 200;
+        }
+
+        public void Depositar(double valor)
+        {
+            if (valor < 0) Console.WriteLine("Valor Inválido. Deposito Cancelado");
+            if (limite <= 0 || valor >limite)
+            {
+                Console.WriteLine("Você não possui limite para essa transação");
+            }
+            else
+            {
+                Console.WriteLine("Deposito concluido!");
+            saldo += valor;
+            limite -= valor;
+
+            }
+        }
+
+        public void GetInfo()
+        {
+            Console.WriteLine($"O seu saldo eh {saldo} e seu limite eh {limite}");
+        }
+    }
+}
