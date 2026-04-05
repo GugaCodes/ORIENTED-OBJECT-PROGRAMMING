@@ -1,0 +1,23 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+
+Funcionario func1 = new Funcionario("Gustavo Oliveira", 1105.50);
+
+func1.GetSalario();
+func1.SetSalario(4000.65);
+func1.GetSalario();
+func1.SetSalario(-32548);
+
+Funcionario func2 = new Funcionario("Guilherme Silva", -658.25);
+
+
+
+
+
+
+
+
+
+
