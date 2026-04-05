@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using POO_EXERCICIOS;
+
+namespace POO_EXERCICIOS
+{
+    public class Veiculo
+    {
+        string marca;
+        double velocidade;
+
+        public Veiculo(string marca, double velocidade)
+        {
+            this.marca = marca;
+            this.velocidade = velocidade;
+        }
+
+        public void ExibirDados()
+        { 
+            Console.WriteLine($"O seu carro e da marca {marca}, tem {velocidade} KM/H de velocidade");
+        }
+    }
+}
