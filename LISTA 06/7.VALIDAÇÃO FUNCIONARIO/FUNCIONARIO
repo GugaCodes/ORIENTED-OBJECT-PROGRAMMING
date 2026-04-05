@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Funcionario
+    {
+
+        string nome;
+        double salario = 0;
+
+        public Funcionario(string nome, double salario)
+        {
+            this.nome = nome;
+            if (salario < 0) Console.WriteLine("Não e possivel atriuir este salario a {0}", nome);
+            else this.salario = salario;
+        }
+
+        public void SetSalario(double salario)
+        {
+            if (salario < 0) Console.WriteLine("Não e possivel atriuir este salario a {0}",nome);
+            this.salario = salario;
+        }
+
+        public void GetSalario()
+        {
+            Console.WriteLine($"O salario de {nome} eh {salario:F2}");
+        }
+    }
+
+}
