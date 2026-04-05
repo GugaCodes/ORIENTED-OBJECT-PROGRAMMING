@@ -1,1 +1,18 @@
-c
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class ContaaBancaria
+    {
+        protected double saldo;
+
+        public ContaaBancaria()
+        {
+            this.saldo = 0; 
+        }
+
+        
+        }
+}
