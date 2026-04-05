@@ -1,0 +1,17 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+
+Usuario us1 = new Usuario("gsilva642", "336584");
+Usuario us2 = new Usuario("guilhermellk", "");
+
+Administrador adm1 = new Administrador("Mark987", "5547", 6);
+
+
+
+
+
+
+
+
