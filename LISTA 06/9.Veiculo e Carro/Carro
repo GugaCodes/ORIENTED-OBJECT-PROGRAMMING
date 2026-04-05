@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public  class Carroo : Veiculo
+    {
+        int qtdPortas;
+
+        public Carroo(string marca, int velocidade, int qtdPortas): base(marca, velocidade)
+        {
+            this.qtdPortas = qtdPortas;
+        }
+
+   
+
+        
+    }
+}
