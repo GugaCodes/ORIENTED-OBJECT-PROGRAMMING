@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class Produto
+    {
+        protected string nome;
+        protected double preco;
+
+        public Produto(string nome, double preco)
+        {
+            this.nome = nome;
+            if (preco < 0)
+            {
+                throw new ArgumentException("Valor inválido");
+            }
+            this.preco = preco;
+        }
+    }
+}
