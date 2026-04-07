@@ -1,0 +1,32 @@
+using Revisão_P_;
+
+Aluno aluno1 = new Aluno("Gustavo Silva Oliveira", 20, "8847BCCNA");
+Aluno aluno2 = new Aluno("Guilherme Silva Oliveira", 13, "1478ENF8M2026");
+Pessoaa pessoa1 = new Pessoaa("Mario Toledo", 26);
+
+List<Pessoaa> listaPessoas = new List<Pessoaa>();
+listaPessoas.Add(pessoa1);
+listaPessoas.Add(aluno1);
+listaPessoas.Add(aluno2);
+
+foreach(Pessoaa galera in listaPessoas)
+{
+    if(galera is Aluno)
+    {
+        Aluno alunoCast  = (Aluno)galera;
+        Console.WriteLine($"Você eh aluno!! - Nome: {alunoCast.GetNome()} - Matricula: {alunoCast.GetMatricula()}");
+    }
+    else
+    {
+        Console.WriteLine($"Você não eh aluno!! - Nome: {galera.GetNome()} ");
+    }
+}
+
+aluno1.SetNome("Max Verstappen");
+aluno1.SetIdade(-8);
+
+foreach(Pessoaa pessoa in listaPessoas)
+{
+    Console.WriteLine(pessoa.GetNome());
+}
+
