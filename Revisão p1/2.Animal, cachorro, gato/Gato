@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Gato : Animal
+    {
+        public Gato(string nome, int qtdPatas) : base(nome, qtdPatas)
+        {
+
+        }
+
+        public void Miar()
+        {
+            Console.WriteLine("Miauuuuu");
+        }
+    }
+}
