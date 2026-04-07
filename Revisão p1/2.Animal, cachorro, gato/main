@@ -1,0 +1,14 @@
+using Revisão_P_;
+
+Cachorro dog = new Cachorro("Xiuaua", 4);
+Gato cat = new Gato("Felino", 4);
+
+Animal animal = new Cachorro("Gui", 4);
+
+if(animal is Cachorro)
+{
+    Cachorro cachorro = (Cachorro)animal;
+    cachorro.Latir();
+}
+dog.Latir();
+cat.Miar();
