@@ -1,0 +1,15 @@
+using Revisão_P_;
+
+try
+{
+    Produtoo prod1 = new Produtoo("Shampoo", 15.50);
+    Produtoo prod2 = new Produtoo("Shampoo", -48.65);
+
+}
+catch (Exception erro)
+{
+    Console.WriteLine(erro.Message);
+}
+
+
+
