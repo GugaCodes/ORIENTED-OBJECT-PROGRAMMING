@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Produto
+    {
+
+        string nome;
+        string genero;
+        string empresa;
+        string criador;
+
+        public Produto(string nome, string genero, string empresa, string criador)
+        {
+            this.nome = nome;
+            this.genero = genero;
+            this.empresa = empresa;
+            this.criador = criador;
+        }
+
+        public string GetNome()
+        {
+            return nome;
+        }
+
+    }
+}
