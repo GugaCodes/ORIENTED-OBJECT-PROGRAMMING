@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_EXERCICIOS
+{
+    public class ProdutoImportado : Produto
+    {
+
+        double taxaImportação;
+
+        public ProdutoImportado(string nome, double preco, double taxaImportação) : base (nome, preco)
+        {
+            this.taxaImportação = taxaImportação;
+        }
+
+        public double PrecoFinal()
+        {
+            double precoFInal = preco + taxaImportação;
+            return precoFInal;
+        }
+
+        public void ExibirInfo()
+        {
+            Console.WriteLine($"O seu produto custava {preco:C2} e agora custa {PrecoFinal():C2} por conta das taxas de importação!");
+            Console.WriteLine("Valor da taxa: {0}",taxaImportação);
+        }
+
+
+    }
+
+
+}
