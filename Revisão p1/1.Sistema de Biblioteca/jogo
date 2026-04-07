@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Jogo : Produto
+    {
+        string console;
+        int numJogadores;
+
+        public Jogo(string nome, string genero, string empresa, string criador, string console, int numJogadores) : base(nome, genero, empresa, criador)
+        {
+            {
+                this.console = console;
+                this.numJogadores = numJogadores;
+            }
+        }
+
+    }
+}
