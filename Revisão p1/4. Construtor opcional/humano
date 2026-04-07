@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Humano
+    {
+        string nome;
+        int idade;
+        string sexo;
+
+        public Humano(string nome, int idade)
+        {
+            this.nome = nome;
+            this.idade = idade;
+            
+        }
+
+        public Humano(string nome, int idade, string sexo) : this(nome, idade)
+        {
+            this.sexo = sexo;
+        }
+    }
+}
