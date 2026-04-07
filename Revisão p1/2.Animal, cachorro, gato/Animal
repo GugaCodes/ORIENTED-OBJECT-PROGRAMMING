@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Animal
+    {
+        string raca;
+        int qtdPatas;
+
+        public Animal(string raca, int qtdPtas)
+        {
+            this.raca = raca;
+            this.qtdPatas = qtdPtas;
+        }
+    }
+}
