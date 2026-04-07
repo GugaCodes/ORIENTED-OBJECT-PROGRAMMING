@@ -1,0 +1,39 @@
+using Revisão_P_;
+Pessoa p1 = new Pessoa("Gustavo", "49770846830");
+Jogo game1 = new Jogo("Le mans Ultimate", "Simulador", "Studio397", "Max Verstappen", "PC", 220);
+Jogo game2 = new Jogo("F1 2025", "Simulador", "Ea Sports", "Max Verstappen", "PC", 220);
+Jogo game3 = new Jogo("Assetto Corsa", "Simulador", "Kunos", "Max Verstappen", "PC", 220);
+Jogo game4 = new Jogo("Iracing", "Simulador", "Nitendo", "Max Verstappen", "PC", 220);
+
+Biblioteca senac = new Biblioteca();
+
+
+senac.alugar(game1, p1);
+senac.Adicionar(game1);
+senac.Adicionar(game2);
+senac.Adicionar(game3);
+senac.Adicionar(game4);
+
+
+Console.WriteLine();
+
+Console.WriteLine("Produtos em estoque:");
+senac.ExibirEstoque();
+Console.WriteLine();
+
+Console.WriteLine("Alugando Produto");
+Console.WriteLine();
+
+senac.alugar(game1, p1);
+Console.WriteLine("Produtos em estoque:");
+
+senac.ExibirEstoque();
+Console.WriteLine();
+senac.devolver(game1, p1);
+Console.WriteLine();
+Console.WriteLine("Produtos em estoque:");
+Console.WriteLine();
+senac.ExibirEstoque();
+
+
+
