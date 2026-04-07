@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Carro
+    {
+        string modelo;
+        Motor motor;
+
+        public Carro(string modelo, Motor motor)
+        {
+            this.modelo = modelo;
+            if(motor == null)
+            {
+                throw new Exception("Motor não pode ser nulo");
+                
+            }
+            else
+            this.motor = motor;
+        }
+    }
+}
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Carro
+    {
+        string modelo;
+        Motor motor;
+
+        public Carro(string modelo, Motor motor)
+        {
+            this.modelo = modelo;
+            if(motor == null)
+            {
+                throw new Exception("Motor não pode ser nulo");
+                
+            }
+            else
+            this.motor = motor;
+        }
+    }
+}
