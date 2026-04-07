@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Aluno : Pessoaa
+    {
+
+        protected string matricula;
+
+
+        public Aluno(string nome, int idade, string matricula) : base(nome, idade)
+        {
+            this.matricula = matricula;
+        }
+
+        public string GetMatricula()
+        {
+            return matricula;
+        }
+    }
+}
