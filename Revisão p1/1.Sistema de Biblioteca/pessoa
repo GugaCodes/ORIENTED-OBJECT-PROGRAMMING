@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Pessoa
+    {
+        string nome;
+        string cpf;
+        List<Produto> produtosAlugado;
+
+        public Pessoa(string nome, string cpf)
+        {
+            this.nome = nome;
+            this.cpf = cpf;
+            this.produtosAlugado = new List<Produto>();
+        }
+
+        public string GetNome()
+        {
+            return nome;
+        }
+        public string GetCpf()
+        {
+            return cpf;
+        }
+
+        public void Alugar(Produto produto)
+        {
+            produtosAlugado.Add(produto);
+        }
+
+        public void Devolver(Produto produto)
+        {
+            if (!produtosAlugado.Contains(produto))
+            {
+                Console.WriteLine("Você não possui esse livro");
+            }
+            else
+            {
+                produtosAlugado.Remove(produto);
+                
+            }
+        }
+    }
+}
