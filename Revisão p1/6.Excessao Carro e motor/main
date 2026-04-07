@@ -1,0 +1,15 @@
+using Revisão_P_;
+
+try
+{
+
+    Motor ferrari = new Motor(220, "gasolina");
+    Carro audiTT = new Carro("AudiTT", null);
+}
+catch(Exception erro)
+{
+    Console.WriteLine(erro);
+}
+
+
+
