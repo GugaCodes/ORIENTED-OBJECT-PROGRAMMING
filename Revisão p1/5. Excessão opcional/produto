@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Produtoo
+    {
+        string noome;
+        double preco;
+        
+        public Produtoo(string noome, double preco)
+        {
+            this.noome = noome;
+            if(preco < 0)
+            {
+                throw new Exception("o preco nao pode ser negativo");
+            }
+            else
+            this.preco = preco;
+
+        }
+    }
+}
