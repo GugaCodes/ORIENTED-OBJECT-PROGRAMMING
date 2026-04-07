@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Motor
+    {
+        int potencia;
+        string tipoCombustivel;
+
+        public Motor(int potencia, string tipoCombustivel)
+        {
+            this.potencia = potencia;
+            this.tipoCombustivel = tipoCombustivel;
+        }
+    }
+}
