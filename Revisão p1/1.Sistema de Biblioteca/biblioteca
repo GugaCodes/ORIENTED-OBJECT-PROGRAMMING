@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Biblioteca
+    {
+        List<Produto> estoque;
+
+        public Biblioteca()
+        {
+            estoque = new List<Produto>();
+        }
+
+        public void Adicionar(Produto item)
+        {
+            estoque.Add(item);
+        }
+
+        public void alugar(Produto item, Pessoa pessoa)
+        {
+            if (!estoque.Contains(item))
+            {
+                Console.WriteLine("Não possuimos o Produto em estoque no momento");
+            }
+            else
+            {
+                estoque.Remove(item);
+                pessoa.Alugar(item);
+                Console.WriteLine($"O produto {item.GetNome()} foi alugado por {pessoa.GetNome()}");
+            }
+        }
+
+        public void devolver(Produto item, Pessoa pessoa)
+        {  
+            pessoa.Devolver(item);
+            estoque.Add(item);
+
+            Console.WriteLine($"O produto {item.GetNome()} foi devolvido por {pessoa.GetNome()}");
+        }
+
+        public void ExibirEstoque()
+        {
+            foreach (Produto item in estoque)
+            {
+                Console.WriteLine(item.GetNome());
+            }
+        }
+    }
+}
