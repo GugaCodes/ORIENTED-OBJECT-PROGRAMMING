@@ -1,0 +1,21 @@
+using ClienteEx1;
+using Exercicio1;
+using POO_EXERCICIOS;
+
+ProdutoImportado importProduct = new ProdutoImportado("Perfume", 15.80, 54.33);
+
+importProduct.ExibirInfo();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
