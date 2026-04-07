@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_P_
+{
+    public class Livro : Produto
+    {
+        int numPaginas;
+
+        public Livro(string nome, string genero, string empresa, string criador, int numPaginas) : base(nome, genero, empresa, criador)
+        {
+            this.numPaginas = numPaginas;
+        }
+
+    }
+}
