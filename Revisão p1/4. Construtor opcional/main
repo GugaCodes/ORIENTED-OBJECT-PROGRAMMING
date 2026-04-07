@@ -1,0 +1,7 @@
+using Revisão_P_;
+
+Humano human1 = new Humano("Gustavo", 20,"Masculino");
+Humano human2 = new Humano("Gustavo", 20);
+
+
+
