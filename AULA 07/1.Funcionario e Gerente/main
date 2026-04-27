@@ -1,0 +1,8 @@
+using POO_POS_PROVA;
+
+Funcionario gustavo = new Funcionario("Gustavo", 1105.50);
+Funcionario guilherme = new Gerente("Guilherme", 1105.50);
+
+gustavo.ExibirInfo();
+Console.WriteLine("-----------");
+guilherme.ExibirInfo();
