@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml.Serialization;
+
+namespace POO_POS_PROVA
+{
+    public class Funcionario
+    {
+        string nome;
+        protected double salario;
+        protected double bonus;
+
+        public Funcionario(string nome, double salario)
+        {
+            this.nome = nome;
+            this.salario = salario;
+            this.bonus = 10;
+        }
+
+
+        public void SetBonus(double valor)
+        {
+            this.bonus = valor;
+        }
+        public double GetBonus()
+        {
+            return this.bonus; 
+        }
+
+        public virtual double CalcularBonus()
+        {
+            return salario + (salario * bonus/ 100);
+        }
+
+        public void ExibirInfo()
+        {
+            Console.WriteLine($"O seu salario é de: {salario:C2}");
+            Console.WriteLine($"O seu bonus é de {bonus} %");
+            Console.WriteLine($"O seu novo salario é de {CalcularBonus():C2}");
+        }
+    }
+
+        
+
+    
+    
+}
