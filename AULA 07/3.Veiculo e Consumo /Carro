@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class Carro: Veiculo
+    {
+        double litros;
+
+        public Carro(double litros)
+        {
+            this.litros = litros;
+        }
+
+        public override double CalcularConsumo(double distancia)
+        {
+            double consumo = distancia/litros;
+            Console.WriteLine($"Percorri {distancia}KM.\nConsumi {consumo:F2} KM/L");
+            return consumo;
+        }
+    }
+}
