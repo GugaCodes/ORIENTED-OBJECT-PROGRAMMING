@@ -1,0 +1,7 @@
+using ConsoleApp1;
+
+Retangulo ret = new Retangulo(10,10);
+Circulo cir = new Circulo(5);
+
+ret.ExibirInfo();
+cir.ExibirInfo();
