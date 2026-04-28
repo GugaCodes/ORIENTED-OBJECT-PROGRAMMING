@@ -1,0 +1,7 @@
+using ConsoleApp1;
+
+Carro car = new Carro(40);
+CarroEletrico byd = new CarroEletrico(30);
+
+car.CalcularConsumo(500);
+byd.CalcularConsumo(200);
