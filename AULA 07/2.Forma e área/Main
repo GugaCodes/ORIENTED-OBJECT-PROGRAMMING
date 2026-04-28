@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class Retangulo :  Forma
+    {
+
+        double lado;
+        double altura;
+
+        public Retangulo(double lado, double altura){ 
+            this.lado = lado;
+            this.altura = altura;
+        }
+
+        public override double CalcularArea() {
+
+            return this.lado * this.altura;
+        }
+
+        public void ExibirInfo()
+        {
+            double area = CalcularArea();
+            Console.WriteLine($"Lado: {lado}, Altura: {altura}, Area: {area:F2}");
+        }
+
+
+    }
+}
