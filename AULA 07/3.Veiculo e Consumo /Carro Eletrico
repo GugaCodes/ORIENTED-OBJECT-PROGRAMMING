@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class CarroEletrico : Veiculo
+    {
+        protected double energia;
+
+        public CarroEletrico(double energia)
+        {
+            this.energia = energia;
+        }
+
+        public override double CalcularConsumo(double distancia)
+        {
+            double consumo = (energia / distancia) * 100;
+            Console.WriteLine($"Percorri {distancia}KM.\nConsumi {consumo:F2} kWH/100km");
+            return consumo;
+        }
+    }
+}
