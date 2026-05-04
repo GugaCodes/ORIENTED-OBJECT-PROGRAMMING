@@ -1,0 +1,8 @@
+using POO_POS_PROVA;
+
+Funcionario gustavo = new Funcionario("Gustavo", 1105.50);
+Loja mercado = new Loja();
+
+mercado.Calcular(1254.00);
+mercado.Calcular(1254.00,10);
+
