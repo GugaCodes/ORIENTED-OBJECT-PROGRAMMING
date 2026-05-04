@@ -1,0 +1,8 @@
+using POO_POS_PROVA;
+
+CentralNotificacao central = new CentralNotificacao();
+Usuario us1 = new Usuario("Gustavo", "7726");
+Notificação not = new Notificação();
+
+string mensagem = "Olá pessoal, reunião em 15 minutos na sala 25";
+central.EnviarMensagem(mensagem, us1, not);
