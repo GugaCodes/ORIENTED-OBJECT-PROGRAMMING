@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public class Notificação
+    {
+        public void Enviar(string mensagem)
+        {
+            Enviar(mensagem, "Padrão");
+        }
+        public void Enviar(string mensagem, string idDestinatario)
+        {
+            Console.WriteLine($"[NOTIFICAÇÃO]\nDESTINATÁRIO: {idDestinatario}\nMENSAGEM: {mensagem}");
+        }
+    }
+}
