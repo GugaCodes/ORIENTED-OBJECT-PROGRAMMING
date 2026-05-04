@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public class Usuario
+    {
+        string nome;
+        string id;
+
+        public Usuario(string nome, string id)
+        {
+            this.nome = nome;
+            this.id = id;
+        }
+
+
+        public string GetNome()
+        {
+            return nome;
+        }
+        public string GetId()
+        {
+            return id;
+        }
+    }
+}
