@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public class Loja
+    {
+        public double Calcular(double valor)
+        {
+            double Valordesconto = valor - (valor * 0.05);
+            Console.WriteLine($"O seu desconto é de 5% e o valor final é de {Valordesconto:F2}");
+            return Valordesconto;
+        }
+
+        public double Calcular(double valor, double percentual)
+        {
+            double Valordesconto = valor - (valor * percentual / 100);
+            Console.WriteLine($"O seu desconto é de {percentual}% e o valor final é de {Valordesconto:F2}");
+            return Valordesconto;
+        }
+    }
+}
