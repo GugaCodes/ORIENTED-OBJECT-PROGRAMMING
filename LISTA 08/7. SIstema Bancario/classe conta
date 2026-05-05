@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public abstract class Conta
+    {
+        protected double saldo;
+
+        public Conta()
+        {
+            this.saldo = 0;
+        }
+
+        public double GetSaldo()
+        {
+            return saldo;
+        }
+        public void SetSaldo(double valor)
+        {
+            saldo = valor;
+        }
+
+        public abstract void CalcularSaldo();
+    }
+}
