@@ -1,0 +1,15 @@
+using POO_POS_PROVA;
+
+CalculadoraFrete guTransporte = new CalculadoraFrete();
+
+Console.WriteLine($"O valor do seu frete é: {guTransporte.GetFrete():F2}");
+guTransporte.Calcular(10);
+Console.WriteLine();
+Console.WriteLine($"O valor do seu frete é: {guTransporte.GetFrete():F2}");
+Console.WriteLine();
+guTransporte.Calcular(10,70);
+Console.WriteLine($"O valor do seu frete é: {guTransporte.GetFrete():F2}");
+
+
+
+
