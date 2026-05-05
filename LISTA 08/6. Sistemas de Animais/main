@@ -1,0 +1,11 @@
+using POO_POS_PROVA;
+
+Cachorro dog = new Cachorro();
+Gato cat = new Gato();
+
+cat.EmitirSom();
+dog.EmitirSom();
+
+
+
+
