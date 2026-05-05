@@ -1,0 +1,7 @@
+using POO_POS_PROVA;
+
+MedidorTemperatura medidor = new MedidorTemperatura();
+
+medidor.Registrar(25);
+Console.WriteLine();
+medidor.Registrar(25, "kelvin");
