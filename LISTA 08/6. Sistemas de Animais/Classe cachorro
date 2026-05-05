@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public class Cachorro : Animal
+    {
+        public override void EmitirSom()
+        {
+            Console.WriteLine("AuAu");
+        }
+    }
+}
