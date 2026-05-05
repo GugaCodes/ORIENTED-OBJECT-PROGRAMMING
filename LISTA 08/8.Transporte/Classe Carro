@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AUla08
+{
+    public class Carro : Transporte
+    {
+        public override double CalcularTempoViagem(double distancia)
+        {
+            const double velocidade = 150;
+            double tempo = distancia / velocidade;
+
+            return tempo;
+
+        }
+    }
+}
