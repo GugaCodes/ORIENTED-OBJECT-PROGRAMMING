@@ -1,0 +1,10 @@
+using AUla08;
+
+Gerente manager = new Gerente(35000);
+Desenvolvedor dev = new Desenvolvedor(3200);
+
+Console.WriteLine($"O salaário do dev é {dev.GetSalario():C2} e com bonus ficou de {dev.CalcularBonus():C2}");
+Console.WriteLine();
+Console.WriteLine($"O salaário do gerente é {manager.GetSalario():C2} e com bonus ficou de {manager.CalcularBonus():C2}");
+
+
