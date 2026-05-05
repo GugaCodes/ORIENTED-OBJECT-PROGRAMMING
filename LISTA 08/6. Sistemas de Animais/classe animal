@@ -1,0 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public abstract class Animal
+    {
+        public abstract void EmitirSom();
+    }
+}
