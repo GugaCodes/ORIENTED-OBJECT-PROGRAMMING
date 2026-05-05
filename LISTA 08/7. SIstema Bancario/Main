@@ -1,0 +1,19 @@
+using POO_POS_PROVA;
+
+ContaCorrente contaC = new ContaCorrente();
+ContaPoupanca contaP = new ContaPoupanca();
+
+Console.WriteLine(contaC.GetSaldo());
+contaC.CalcularSaldo();
+Console.WriteLine(contaC.GetSaldo());
+Console.WriteLine();
+
+Console.WriteLine(contaP.GetSaldo());
+contaP.SetSaldo(350.50);
+contaP.CalcularSaldo();
+Console.WriteLine(contaP.GetSaldo());
+
+
+
+
+
