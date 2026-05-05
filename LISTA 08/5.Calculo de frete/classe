@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public class CalculadoraFrete
+    {
+        double frete;
+        const double DISTANCIA_PADRAO = 10;
+
+        public void Calcular(double peso)
+        {
+            frete = peso * 0.5 + DISTANCIA_PADRAO * 0.1;
+        }
+        public void Calcular(double peso, double distancia)
+        {
+            frete = peso * 0.5 + distancia * 0.1;
+        }
+
+        public double GetFrete()
+        {
+            return frete;
+        }
+    }
+}
