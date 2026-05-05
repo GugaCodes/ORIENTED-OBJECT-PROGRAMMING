@@ -15,7 +15,6 @@ namespace POO_POS_PROVA
         }
         public void Registrar(double celsius)
         {
-            Console.WriteLine($"A sua temperatura é de {celsius} graus celsius");
             temperatura = celsius;
         }
 
