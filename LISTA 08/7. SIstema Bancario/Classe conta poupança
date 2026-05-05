@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public class ContaPoupanca : Conta
+    {
+        public ContaPoupanca() : base()
+        {
+        }
+
+        public override void CalcularSaldo()
+        {
+            saldo += saldo * 0.20;
+        }
+    }
+}
