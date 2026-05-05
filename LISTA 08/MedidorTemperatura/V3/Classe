@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace POO_POS_PROVA
+{
+    public class MedidorTemperatura
+    {
+
+        double temperatura;
+        public enum Escala
+        {
+            Celsius,
+            Fahrenheit
+        }
+        public void Registrar(double celsius)
+        {
+            Console.WriteLine($"A sua temperatura é de {celsius} graus celsius");
+            temperatura = celsius;
+        }
+
+        public void Registrar(double valor, Escala escala)
+        {
+            if (escala == Escala.Fahrenheit)
+            {
+                double conversaoCelsius = (valor - 32) / 1.8;
+                Registrar(conversaoCelsius);
+            }
+            else if (escala == Escala.Celsius)
+            {
+                Registrar(valor);
+
+            }
+        }
+
+        public double GetTemperatura()
+        {
+            return temperatura;
+        }
+    }
+}
