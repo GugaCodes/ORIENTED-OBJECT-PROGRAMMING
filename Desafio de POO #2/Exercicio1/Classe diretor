@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+
+namespace P2__Desafio_1
+{
+    public class Diretor : Funcionario, ISalarioAumentavel
+    {
+        double bonificacaoPercentual;
+
+        public Diretor(string nome, int idade, double salarioBase, double bonificacaoPercentual) : base(nome, idade, salarioBase)
+        {
+            this.bonificacaoPercentual = bonificacaoPercentual;
+        }
+
+        public override double CalcularSalario()
+        {
+            double resultado = salarioBase += salarioBase * bonificacaoPercentual / 100;
+            return resultado;
+        }
+
+        public void AumentarSalario(double porcentagem)
+        {
+            double valorEmPorcentagem = porcentagem / 100;
+            salarioBase += salarioBase * valorEmPorcentagem;
+        }
+    }
+}
