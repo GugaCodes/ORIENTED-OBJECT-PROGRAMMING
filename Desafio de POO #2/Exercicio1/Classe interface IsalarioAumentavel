@@ -1,0 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace P2__Desafio_1
+{
+    public interface ISalarioAumentavel
+    {
+        void AumentarSalario(double porcentagem);
+    }
+}
