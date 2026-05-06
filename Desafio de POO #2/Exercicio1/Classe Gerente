@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Text;
+
+namespace P2__Desafio_1
+{
+    public class Gerente: Funcionario,ISalarioAumentavel
+    {
+        double bonificacao;
+
+        public Gerente(string nome, int idade, double salarioBase, double bonificacao) : base(nome, idade, salarioBase) 
+        {
+            this.bonificacao = bonificacao;
+        }
+
+        public override double CalcularSalario()
+        {
+            double resultado = salarioBase + bonificacao;
+            return resultado;
+        }
+
+        public void AumentarSalario(double porcentagem)
+        {
+            double valorEmPorcentagem = porcentagem / 100;
+            salarioBase += salarioBase * valorEmPorcentagem;
+        }
+    }
+}
