@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace P2__Desafio_1
+{
+    public class FuncionarioRegular: Funcionario
+    {
+        public FuncionarioRegular(string nome, int idade, double salarioBase) : base(nome, idade, salarioBase) { }
+
+        public override double CalcularSalario()
+        {
+            return salarioBase;
+        }
+
+        
+        
+    }
+}
