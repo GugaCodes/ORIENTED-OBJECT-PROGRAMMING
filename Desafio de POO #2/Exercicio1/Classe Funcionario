@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace P2__Desafio_1
+{
+    public abstract class Funcionario
+    {
+        string nome;
+        int idade;
+        protected double salarioBase;
+        public Funcionario(string nome, int idade, double salarioBase)
+        {
+            this.nome = nome;
+            this.idade = idade;
+            this.salarioBase = salarioBase;
+        }
+
+        public abstract double CalcularSalario();
+        public double GetSalario()
+        {
+            return salarioBase;
+        }
+
+        public string GetNome() { 
+            return nome;
+        }
+    }
+
+
+}
