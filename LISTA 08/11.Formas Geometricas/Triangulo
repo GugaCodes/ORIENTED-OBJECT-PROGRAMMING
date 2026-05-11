@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Triangulo: Forma
+    {
+        double basee;
+        double altura;
+
+        public Triangulo(double basee, double altura)
+        {
+            this.basee = basee;
+            this.altura = altura;
+        }
+
+        public override double CalcularArea()
+        {
+            area = (basee * altura) / 2;
+            return area;
+        }
+    }
+}
