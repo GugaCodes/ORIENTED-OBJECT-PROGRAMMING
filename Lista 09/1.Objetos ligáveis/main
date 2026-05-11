@@ -1,0 +1,24 @@
+using Revisão_p2;
+using System.Collections.Generic;
+
+Cafeteira cafeteira = new Cafeteira();
+Drone drone = new Drone(); 
+
+Console.WriteLine("Cafeteira");
+cafeteira.Ligar();
+cafeteira.Ligar();
+cafeteira.Desligar();
+cafeteira.Ligar();
+Console.WriteLine("drone");
+
+drone.Ligar();
+drone.Desligar();
+drone.Desligar();
+
+drone.Ligar();
+drone.Ligar();
+
+
+
+
+
