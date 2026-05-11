@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Circulo: Forma
+    {
+        double raio;
+
+        public Circulo(double raio)
+        {
+            this.raio = raio;
+        }
+        public override double CalcularArea()
+        {
+            area = Math.PI * Math.Pow(raio, 2);
+            return area;
+        }
+    }
+}
