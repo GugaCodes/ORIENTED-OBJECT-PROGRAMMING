@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Quadrado : Forma
+    {
+        double lado;
+
+        public Quadrado(double lado)
+        {
+            this.lado = lado;
+        }
+
+        public override double CalcularArea()
+        {
+            area = lado * lado;
+            return area;
+        }
+    }
+}
