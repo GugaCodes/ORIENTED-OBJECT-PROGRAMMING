@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Cafeteira:ILigavel
+    {
+        bool ligado;
+
+        public Cafeteira()
+        {
+            ligado = false;
+        }
+
+        public void Ligar()
+        {
+            if (ligado)
+            {
+                Console.WriteLine("A cafeteira já está ligada");
+            }
+            else
+            {
+                ligado = true;
+                Console.WriteLine("ligando... Aquecendo água para café");
+            }
+        }
+
+        public void Desligar()
+        {
+            if (!ligado) {
+                Console.WriteLine("A cafeteira já está desligada");
+            }
+            else
+            {
+                ligado = false;
+                Console.WriteLine("Cafeteira desligada");
+            }
+        }
+    }
+}
