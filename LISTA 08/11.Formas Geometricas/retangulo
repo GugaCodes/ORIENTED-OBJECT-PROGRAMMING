@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Retangulo: Forma
+    {
+        double lado;
+        double altura;
+
+        public Retangulo(double lado, double altura)
+        {
+            this.lado = lado;
+            this.altura = altura;
+        }
+
+        public override double CalcularArea()
+        {
+            area = lado * altura;
+            return area;
+        }
+    }
+}
