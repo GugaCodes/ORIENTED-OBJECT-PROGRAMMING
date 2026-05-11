@@ -1,0 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public abstract class Forma
+    {
+
+        protected double area;
+        public abstract double CalcularArea();
+    }
+}
