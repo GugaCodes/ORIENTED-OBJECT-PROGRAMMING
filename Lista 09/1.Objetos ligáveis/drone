@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Drone: ILigavel
+    {
+        bool ligado;
+
+        public Drone()
+        {
+            ligado = false;
+        }
+        public void Ligar()
+        {
+            if (ligado)
+            {
+                Console.WriteLine("Drone já está ligado");
+            }
+            else
+            {
+                ligado = true;
+                Console.WriteLine("Drone iniciando voo");
+            }
+        }
+
+        public void Desligar()
+        {
+            if (!ligado)
+            {
+                Console.WriteLine("Já está desligado");
+  
+            }
+            else
+            {
+                ligado = false;
+                Console.WriteLine("Drone Pousando e desligando motores");
+            }
+        }
+    }
+}
