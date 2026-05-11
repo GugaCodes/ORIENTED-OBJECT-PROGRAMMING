@@ -1,0 +1,42 @@
+using Revisão_p2;
+
+/*Quadrado quadrado = new Quadrado(25);
+Retangulo retangulo = new(5,10);
+Triangulo triangulo = new(8,6);
+Circulo circulo = new Circulo(5);*/
+
+/*Console.WriteLine($"A area do quadrado eh: {quadrado.CalcularArea()}");
+Console.WriteLine($"A area do retangulo eh: {retangulo.CalcularArea()}");
+Console.WriteLine($"A area do triangulo eh: {triangulo.CalcularArea()}");
+Console.WriteLine($"A area do circulo eh: {circulo.CalcularArea():F2}");*/
+
+List<Forma> lista = new List<Forma>()
+{
+    new Quadrado(25),
+    new Retangulo(5,10),
+    new Triangulo(8,6),
+    new Circulo(5)
+};
+
+foreach(Forma forma in lista)
+{
+    if(forma is Circulo)
+    {
+        Circulo circulo = (Circulo)forma;
+        Console.WriteLine($"A area do circulo eh: {circulo.CalcularArea():F2}");
+    }else if(forma is Triangulo)
+    {
+        Triangulo triangulo = (Triangulo)forma;
+        Console.WriteLine($"A area do triangulo eh: {triangulo.CalcularArea()}");
+    }
+    else if(forma is Retangulo)
+    {
+        Retangulo retangulo = (Retangulo)forma;
+        Console.WriteLine($"A area do retangulo eh: {retangulo.CalcularArea()}");
+    }
+    else if( forma is Quadrado)
+    {
+        Quadrado quadrado = (Quadrado)forma;
+        Console.WriteLine($"A area do quadrado eh: {quadrado.CalcularArea()}");
+    }
+}
