@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    internal class DescontoPromocional : ICalculavel
+    {
+        double valorOriginal;
+        double percentual;
+
+        public DescontoPromocional(double valorOriginal, double percentual)
+        {
+            this.valorOriginal = valorOriginal;
+            this.percentual = percentual;
+        }
+
+        public double Calcular() {
+
+            return valorOriginal -= (valorOriginal * percentual) / 100;
+        }
+
+        public double GetValorOriginal()
+        {
+            return valorOriginal;
+        }
+
+        public double GetPercentual()
+        {
+            return percentual;
+        }
+    }
+}
