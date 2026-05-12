@@ -1,0 +1,10 @@
+using Revisão_p2;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+
+Relatorio relatorio = new Relatorio("Setor de RH", "Dados de Recrutamento");
+RelatorioFinanceiro relatorioFinanceiro = new RelatorioFinanceiro("Setor Financeiro", "Relatorio mensal");
+
+relatorio.Gerar();
+Console.WriteLine();
+relatorioFinanceiro.Gerar();
