@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class RelatorioFinanceiro : Relatorio
+    {
+        public RelatorioFinanceiro(string destinatario, string assunto) : base(destinatario, assunto) { }
+
+        public override void Gerar()
+        {
+            base.Gerar();
+            Console.WriteLine("Este relatório financeiro tem como objetivo apresentar uma análise simples das receitas e despesas da empresa durante o período avaliado. Através dessas informações, é possível acompanhar a situação financeira e auxiliar na tomada de decisões.\r\n\r\nDesenvolvimento\r\n\r\nDurante o período analisado, a empresa apresentou entradas financeiras provenientes das vendas e serviços realizados. Também foram identificadas despesas relacionadas a custos operacionais, pagamento de funcionários, fornecedores e demais gastos administrativos.\r\n\r\nCom a organização dessas informações, foi possível observar o controle financeiro da empresa e identificar a importância do planejamento para evitar gastos desnecessários e melhorar os resultados financeiros.\r\n\r\nConclusão\r\n\r\nConclui-se que o relatório financeiro é uma ferramenta importante para o gerenciamento da empresa, pois permite acompanhar receitas, despesas e resultados obtidos. Além disso, auxilia no planejamento financeiro e na definição de estratégias para o crescimento da organização.");
+        }
+    }
+}
