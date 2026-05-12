@@ -1,0 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DesafioPOO2___Exercicio_2
+{
+    public interface IDesenhavel
+    {
+
+        void Desenhar();
+    }
+}
