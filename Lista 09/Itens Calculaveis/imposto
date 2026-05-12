@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Imposto: ICalculavel
+    {
+        double valorBase;
+        double taxa;
+
+        public Imposto(double valorBase, double taxa)
+        {
+            this.valorBase = valorBase;
+            this.taxa = taxa;
+        }
+
+        public double Calcular()
+        {
+            return valorBase * taxa;
+        }
+
+        public double GetValorBase() {
+            return valorBase;
+        }
+    }
+}
