@@ -1,0 +1,48 @@
+using DesafioPOO2___Exercicio_2;
+using System.ComponentModel.Design;
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+
+/*Circulo circulo = new Circulo(5);
+Triangulo triangulo = new Triangulo(5, 5, 5);
+Quadrado quadrado = new Quadrado(10, 5);
+
+Console.WriteLine($"O circulo possui area de {circulo.CalcularArea():F2} e o perimetro de {circulo.CalcularPerimetro():F2}");
+Console.WriteLine($"O triangulo possui area de {triangulo.CalcularArea():F2} e o perimetro de {triangulo.CalcularPerimetro():F2}");
+Console.WriteLine($"O quadrado possui area de {quadrado.CalcularArea():F2} e o perimetro de {quadrado.CalcularPerimetro():F2}");
+
+circulo.Desenhar();*/
+
+List<FormaGeometrica> listaFormas = new List<FormaGeometrica>() {
+    new Circulo(5),
+    new Quadrado(10,5),
+    new Triangulo(5,5,5)
+};
+
+foreach(FormaGeometrica forma in listaFormas)
+{
+    if (forma is Circulo)
+    {
+        Circulo circulo = (Circulo)forma;
+        Console.WriteLine($"O circulo possui area de {circulo.CalcularArea():F2} e o perimetro de {circulo.CalcularPerimetro():F2}");
+        circulo.Desenhar();
+        Console.WriteLine();
+
+    }
+    else if (forma is Triangulo) {
+        Triangulo triangulo = (Triangulo)forma;
+        Console.WriteLine($"O triangulo possui area de {triangulo.CalcularArea():F2} e o perimetro de {triangulo.CalcularPerimetro():F2}");
+        triangulo.Desenhar();
+        Console.WriteLine();
+
+    }
+    else if(forma is Quadrado)
+    {
+        Quadrado quadrado = (Quadrado)forma;
+        Console.WriteLine($"O quadrado possui area de {quadrado.CalcularArea():F2} e o perimetro de {quadrado.CalcularPerimetro():F2}");
+        quadrado.Desenhar();
+        Console.WriteLine();
+
+
+    }
+}
