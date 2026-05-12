@@ -1,0 +1,14 @@
+using Revisão_p2;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+
+Imposto imposto = new Imposto(650.00, 23.99);
+DescontoPromocional desconto = new DescontoPromocional(2254, 25);
+
+Console.WriteLine($"O valor base é de {imposto.GetValorBase():C2} e com imposto ficou : {imposto.Calcular():C2}");
+Console.WriteLine($"O valor original da sua compra é de {desconto.GetValorOriginal():C2} e com desconto de {desconto.GetPercentual()}% ficou por {desconto.Calcular():C2}");
+
+
+
+
+
