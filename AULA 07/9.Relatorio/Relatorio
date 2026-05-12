@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Revisão_p2
+{
+    public class Relatorio
+    {
+        string destinatario;
+        string assunto;
+
+    public Relatorio(string destinatario, string assunto)
+        {
+            this.destinatario = destinatario;
+            this.assunto = assunto;
+        }
+
+    public virtual void Gerar()
+        {
+            Console.WriteLine($"Destinatário: {destinatario}\nAssunto: {assunto}");
+        }
+    }
+}
