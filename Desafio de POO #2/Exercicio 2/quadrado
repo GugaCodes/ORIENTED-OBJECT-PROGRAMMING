@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DesafioPOO2___Exercicio_2
+{
+    public class Quadrado : FormaGeometrica, IDesenhavel
+    {
+        double largura;
+        double altura;
+
+        public Quadrado(double largura, double altura)
+        {
+            this.largura = largura;
+            this.altura = altura;
+        }
+
+        public override double CalcularArea()
+        {
+            double area = altura * largura;
+            return area;
+        }
+
+        public override double CalcularPerimetro()
+        {
+            double perimetro = altura + altura + largura + largura;
+            return perimetro;
+        }
+
+        public void Desenhar()
+        {
+            Console.WriteLine("▪");
+        }
+    }
+}
